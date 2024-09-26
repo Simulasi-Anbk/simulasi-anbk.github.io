@@ -26,11 +26,11 @@ function login() {
   const message = document.getElementById("message");
 
   // Simulasi autentikasi sederhana (ganti dengan logika autentikasi Anda)
-  if (username === "AN2024063564" && password === "simulasian") {
+  if (username === "AN202406356" && password === "simulasian") {
     // Jika login berhasil, buka jendela baru
     window.open("https://quilgo.com/t/vWqSPEYMTLBKsW8f", "_blank");
     message.textContent = "Login berhasil!";
   } else {
-    message.textContent = "Username atau password salah!";
+    message.textContent = "Maaf! Login Gagal, Simulasi ANBK ditutup!";
   }
 }
