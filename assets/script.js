@@ -31,6 +31,6 @@ function login() {
     window.open("https://quilgo.com/t/vWqSPEYMTLBKsW8f", "_blank");
     message.textContent = "Login berhasil!";
   } else {
-    message.textContent = "Username atau password salah.";
+    message.textContent = "Username atau password salah!";
   }
 }
