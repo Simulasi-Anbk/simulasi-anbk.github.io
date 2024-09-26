@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="assets/style.css">
+	<title>Login Simulasi Anbk</title>
+</head>
+<body>
+	
+	<div class="container">
+		<form action="#" class="login active">
+			  <div id="message"></div>
+			<h2 class="title">Selamat datang!</h2>
+			<p class="desk">Om Swastiastu, Silakan login dengan Username dan Password agar bisa memasuki Web Simulasi.</p>
+			<div class="form-group">
+				<label for="email">Username</label>
+				<div class="input-group">
+					<input type="text" id="username" placeholder="Username" value="AN2024063564">
+					<i class='bx bx-user'></i>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<div class="input-group">
+					<input type="password" pattern=".{8,}" id="password" placeholder="Password terdaftar" value="simulasian">
+					<i class='bx bx-lock-alt' ></i>
+				</div>
+				<span class="help-text">Password harus 8 karakter</span>
+			</div>
+      <button class="btn-submit" type="submit" onclick="login()">Login</button>
+		</form>
+
+		<form action="#" class="register">
+			<h2 class="title">Pendaftaran akun Player</h2>
+			<div class="form-group">
+				<label for="email">Email</label>
+				<div class="input-group">
+					<input type="email" id="email" placeholder="Email address">
+					<i class='bx bx-envelope'></i>
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="password">Password</label>
+				<div class="input-group">
+					<input type="password" pattern=".{8,}" id="password" placeholder="Password baru">
+					<i class='bx bx-lock-alt' ></i>
+				</div>
+				<span class="help-text">Password harus 8 karakter</span>
+			</div>
+			<div class="form-group">
+				<label for="confirm-pass">Konfirmasi Password</label>
+				<div class="input-group">
+					<input type="password" id="confirm-pass" placeholder="Enter password again">
+					<i class='bx bx-lock-alt' ></i>
+				</div>
+				<span class="help-text">Masukan ulang password yang sudah di buat!</span>
+			</div>
+			<button type="submit" class="btn-submit">Register</button>
+			<p>Saya sudah memiliki akun. <a href="#" onclick="switchForm('login', event)">Login</a></p>
+		</form>
+	</div>
+
+	<script src="assets/script.js"></script>
+</body>
+</html>
